@@ -41,6 +41,7 @@
             this.textDni = new System.Windows.Forms.TextBox();
             this.upId = new System.Windows.Forms.NumericUpDown();
             this.dpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.btnFiltros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.upId)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,11 +155,22 @@
             this.dpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dpFechaNacimiento.TabIndex = 14;
             // 
+            // btnFiltros
+            // 
+            this.btnFiltros.Location = new System.Drawing.Point(339, 309);
+            this.btnFiltros.Name = "btnFiltros";
+            this.btnFiltros.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltros.TabIndex = 15;
+            this.btnFiltros.Text = "Filtros";
+            this.btnFiltros.UseVisualStyleBackColor = true;
+            this.btnFiltros.Click += new System.EventHandler(this.btnFiltros_Click);
+            // 
             // AlumnoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFiltros);
             this.Controls.Add(this.dpFechaNacimiento);
             this.Controls.Add(this.upId);
             this.Controls.Add(this.textDni);
@@ -195,5 +207,6 @@
         private System.Windows.Forms.TextBox textDni;
         private System.Windows.Forms.NumericUpDown upId;
         private System.Windows.Forms.DateTimePicker dpFechaNacimiento;
+        private System.Windows.Forms.Button btnFiltros;
     }
 }

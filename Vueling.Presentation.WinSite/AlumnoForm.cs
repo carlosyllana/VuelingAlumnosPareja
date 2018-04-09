@@ -58,5 +58,12 @@ namespace Vueling.Presentation.WinSite
             alumnoBL.Formatear(TipoFichero.XML);
             alumnoBL.add(alumno);
         }
+
+        private void btnFiltros_Click(object sender, EventArgs e)
+        {
+            AlumnosShowForm showForm = new AlumnosShowForm();
+            showForm.ShowDialog();
+            
+        }
     }
 }

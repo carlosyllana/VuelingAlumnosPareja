@@ -16,5 +16,21 @@ namespace Vueling.Presentation.WinSite
         {
             InitializeComponent();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAñadirAlumnos_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
     }
 }
