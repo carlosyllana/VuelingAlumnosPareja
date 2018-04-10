@@ -62,7 +62,9 @@ namespace Vueling.Presentation.WinSite
         private void btnFiltros_Click(object sender, EventArgs e)
         {
             AlumnosShowForm showForm = new AlumnosShowForm();
-            showForm.ShowDialog();
+            showForm.Owner = this;
+            showForm.Show();
+            this.Hide();
             
         }
     }

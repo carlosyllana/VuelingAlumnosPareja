@@ -33,7 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buscar = new System.Windows.Forms.Label();
             this.btnshowxml = new System.Windows.Forms.Button();
-            this.btnshowtxt = new System.Windows.Forms.Button();
+            this.btnShowTxt = new System.Windows.Forms.Button();
             this.btnAñadirAlumnos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,7 @@
             this.btnshowjson.TabIndex = 4;
             this.btnshowjson.Text = "Show json";
             this.btnshowjson.UseVisualStyleBackColor = true;
+            this.btnshowjson.Click += new System.EventHandler(this.btnshowjson_Click);
             // 
             // textBox1
             // 
@@ -61,6 +62,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buscar
             // 
@@ -70,7 +72,6 @@
             this.buscar.Size = new System.Drawing.Size(40, 13);
             this.buscar.TabIndex = 6;
             this.buscar.Text = "Buscar";
-            this.buscar.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnshowxml
             // 
@@ -80,24 +81,25 @@
             this.btnshowxml.TabIndex = 7;
             this.btnshowxml.Text = "Show xml";
             this.btnshowxml.UseVisualStyleBackColor = true;
+            this.btnshowxml.Click += new System.EventHandler(this.btnshowxml_Click);
             // 
-            // btnshowtxt
+            // btnShowTxt
             // 
-            this.btnshowtxt.Location = new System.Drawing.Point(246, 59);
-            this.btnshowtxt.Name = "btnshowtxt";
-            this.btnshowtxt.Size = new System.Drawing.Size(75, 23);
-            this.btnshowtxt.TabIndex = 8;
-            this.btnshowtxt.Text = "Show txt";
-            this.btnshowtxt.UseVisualStyleBackColor = true;
-            this.btnshowtxt.Click += new System.EventHandler(this.button6_Click);
+            this.btnShowTxt.Location = new System.Drawing.Point(246, 59);
+            this.btnShowTxt.Name = "btnShowTxt";
+            this.btnShowTxt.Size = new System.Drawing.Size(75, 23);
+            this.btnShowTxt.TabIndex = 8;
+            this.btnShowTxt.Text = "Show txt";
+            this.btnShowTxt.UseVisualStyleBackColor = true;
+            this.btnShowTxt.Click += new System.EventHandler(this.btnShowTxt_Click);
             // 
             // btnAñadirAlumnos
             // 
-            this.btnAñadirAlumnos.Location = new System.Drawing.Point(300, 337);
+            this.btnAñadirAlumnos.Location = new System.Drawing.Point(343, 335);
             this.btnAñadirAlumnos.Name = "btnAñadirAlumnos";
-            this.btnAñadirAlumnos.Size = new System.Drawing.Size(118, 29);
+            this.btnAñadirAlumnos.Size = new System.Drawing.Size(75, 23);
             this.btnAñadirAlumnos.TabIndex = 9;
-            this.btnAñadirAlumnos.Text = "Añadir Alumnos";
+            this.btnAñadirAlumnos.Text = "Añadir alumnos";
             this.btnAñadirAlumnos.UseVisualStyleBackColor = true;
             this.btnAñadirAlumnos.Click += new System.EventHandler(this.btnAñadirAlumnos_Click);
             // 
@@ -107,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 414);
             this.Controls.Add(this.btnAñadirAlumnos);
-            this.Controls.Add(this.btnshowtxt);
+            this.Controls.Add(this.btnShowTxt);
             this.Controls.Add(this.btnshowxml);
             this.Controls.Add(this.buscar);
             this.Controls.Add(this.textBox1);
@@ -128,7 +130,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label buscar;
         private System.Windows.Forms.Button btnshowxml;
-        private System.Windows.Forms.Button btnshowtxt;
+        private System.Windows.Forms.Button btnShowTxt;
         private System.Windows.Forms.Button btnAñadirAlumnos;
     }
 }
