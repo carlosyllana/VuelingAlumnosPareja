@@ -11,6 +11,6 @@ namespace Vueling.Business.Logic
     {
         T add(T entity);
         void Formatear(TipoFichero tipoFichero);
-
+        List<T> GetList();
     }
 }

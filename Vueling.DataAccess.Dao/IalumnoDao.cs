@@ -10,5 +10,6 @@ namespace Vueling.DataAccess.Dao
     public interface IalumnoDao
     {
         Alumno Add(Alumno alumno);
+        List<Alumno> GetList();
     }
 }

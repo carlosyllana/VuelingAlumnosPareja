@@ -11,7 +11,7 @@ namespace Vueling.Business.Logic
 {
     public class AlumnoBl : IAlumnoBL<Alumno>
     {
-
+        
         
          public void Formatear(TipoFichero tipoFichero)
         {
@@ -55,6 +55,12 @@ namespace Vueling.Business.Logic
                 return age;
         }
 
-        
+        public List<Alumno> GetList()
+        {
+            Idocument<Alumno> doc = DocumentFactory<Alumno>.getFormat(GetActualFormat());
+            IalumnoDao alumnoDao = new AlumnoDao(doc);
+
+            return alumnoDao.GetList();
+        }
     }
 }

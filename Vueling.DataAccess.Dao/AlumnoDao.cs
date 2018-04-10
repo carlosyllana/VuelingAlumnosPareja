@@ -21,5 +21,10 @@ namespace Vueling.DataAccess.Dao
             
             return iDoc.Add(alumno);
         }
+
+        public List<Alumno> GetList()
+        {
+            return iDoc.GetList();
+        }
     }
 }

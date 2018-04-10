@@ -9,14 +9,14 @@ namespace Vueling.Common.Logic.Model
     public class Alumno : VuelingObject
     {
         #region Atributos
-        private int idAlumno;
-        public string nombre;
-        public int identificador;        
-        public String apellido;
-        public String dni;
-        public DateTime fechaNacimiento;
-        public int edad;
-        public DateTime fechaRegistro;
+        private int idAlumno{ get; set; }
+        public string nombre { get; set; }
+        public int identificador { get; set; }
+        public String apellido { get; set; }
+        public String dni { get; set; }
+        public DateTime fechaNacimiento { get; set; }
+        public int edad { get; set; }
+        public DateTime fechaRegistro { get; set; }
 
         #endregion
 
@@ -62,10 +62,10 @@ namespace Vueling.Common.Logic.Model
             this.Guid = Guid.NewGuid();
         }
 
-        public string getNombre { get; set; }
+        
 
         public int GetId() { return identificador; }
-        public String GetNombre() { return nombre; }
+     
         public String GetApellid() { return apellido; }
         public String Getdni() { return dni; }
 
